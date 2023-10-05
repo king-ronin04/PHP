@@ -12,7 +12,7 @@ $message="<h2>Contact Query from the user:</h2>
 <h4>Message:".$msg."</h4>";
 
 
-$headers="Content-Type:text/html;charset=utf-8";
+$headers="anshuy835@gmail.com";
 
 if(mail($to,$subject,$message,$headers)){
     echo "mail sent successfully";
