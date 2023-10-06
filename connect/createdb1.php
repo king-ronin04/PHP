@@ -9,7 +9,7 @@ if($link === false){
 }
  
 // Attempt create database query execution
-$sql = "CREATE DATABASE demo";
+$sql = "CREATE DATABASE testdemo";
 if(mysqli_query($link, $sql)){
     echo "Database created successfully";
 } else{

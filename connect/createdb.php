@@ -7,7 +7,7 @@ if ($link->connect_error) {
 }
 
 // Create database
-$sql = "CREATE DATABASE demo";
+$sql = "CREATE DATABASE testdemo";
 if ($link->query($sql)) {
   echo "Database created successfully";
 } else {
