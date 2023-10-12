@@ -9,13 +9,11 @@ if($link === false){
 }
  
 // Attempt create table query execution
-$sql = "CREATE TABLE students(
-    id INT NOT NULL PRIMARY KEY AUTO_INCREMENT,
-    first_name VARCHAR(30) NOT NULL,
-    last_name VARCHAR(30) NOT NULL,
-    email VARCHAR(30) NOT NULL UNIQUE,
-    city VARCHAR(30) NOT NULL,
-    marks INT
+$sql = "CREATE TABLE IF NOT EXISTS form_data (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(255) NOT NULL,
+    email VARCHAR(255) NOT NULL,
+    message TEXT NOT NULL
 )";
 if(mysqli_query($link, $sql)){
     echo "Table created successfully.";
