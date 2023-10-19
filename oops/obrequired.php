@@ -8,7 +8,7 @@ $obj = new Rectangle;
 // Get the object properties values
 echo $obj->length; // 0utput: 0
 echo $obj->width; // 0utput: 0
-
+echo "<br>";
 // Set object properties values
 $obj->length = 30;
 $obj->width = 20;
@@ -16,9 +16,11 @@ $obj->width = 20;
 // Read the object properties values again to show the change
 echo $obj->length; // 0utput: 30
 echo $obj->width; // 0utput: 20
+echo "<br>";
 
 
 // Call the object methods
 echo $obj->getPerimeter(); // 0utput: 100
 echo $obj->getArea(); // Output: 600
+echo "<br>";
 ?>
