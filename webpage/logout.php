@@ -1,4 +1,6 @@
 <?php
-session_start();
-session_destroy();
-header('location:./');
+	session_start();
+	unset($_SESSION["UserID"]);
+	unset($_SESSION["AdminID"]);
+	header('Location: Home.php');
+?>

@@ -1,15 +1,24 @@
 <?php
-	require_once('Mobile.php');
+	error_reporting(E_ALL ^ E_DEPRECATED);
+	require_once('User.php');
 	require_once('DataBase.php');
+	require_once('Mobile.php');
 	session_start();
-	if (isset($_SESSION['UserID'])){
-		header("location: MobilesList.php");
-	}
+	$UserID="";
+	$user = null;
 	$mobiles = NULL;
-	$DB = new DataBase();
-	$mobiles = $DB->getMobilesAsend();
-	if($mobiles == 0 || $mobiles == "error" || sizeof($mobiles)==0){
-		$mobiles = NULL;
+	$DB = NULL;
+	if(isset($_SESSION['UserID']) && !empty($_SESSION['UserID'])) {
+		$UserID=$_SESSION['UserID'];
+		$DB = new DataBase();
+		$user = $DB->getUserById($UserID);
+		$DB = new DataBase();
+		$mobiles = $DB->getMobilesAsend();
+		if($mobiles == 0 || $mobiles == "error" || sizeof($mobiles)==0){
+			$mobiles = NULL;
+		}
+	}else{
+		header('Location: Login.php');
 	}
 ?>
 <html>
@@ -21,7 +30,6 @@
 		<link rel="stylesheet" href="bootstrap.min.css">
 	</head>
 	<body>
-	
 		<div class="container-fluid">
 		    <nav class="navbar navbar-inverse">
 		      <div class="container">
@@ -40,16 +48,21 @@
 		        <div class="collapse navbar-collapse" id="navbar-collapse-4">
 		          <ul class="nav navbar-nav navbar-right">
 		            <li><a href="Home.php">Home</a></li>
-		            <li><a href="AboutUs.php">About</a></li>
-		            <li><a href="ContactUs.php">Contact</a></li>
+		            <li><a href="AboutUS.php">About</a></li>
+		            <li><a href="ContactUS.php">Contact</a></li>
 		            <li>
-		              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="Login.html" aria-expanded="false" aria-controls="nav-collapse4">Sign In <i class=""></i> </a>
+		              <a class="btn btn-default btn-outline btn-circle"  data-toggle="collapse" href="logout.php" aria-expanded="false" aria-controls="nav-collapse4">Sign Out <i class=""></i> </a>
 		            </li>
 		          </ul>
 		          <ul class="collapse nav navbar-nav nav-collapse" role="search" id="nav-collapse4">
 		            <li><a href="#">Support</a></li>
 		            <li class="dropdown">
 		              <ul class="dropdown-menu" role="menu">
+		                <li><a href="#">My profile</a></li>
+		                <li><a href="#">Favorited</a></li>
+		                <li><a href="#">Settings</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">Logout</a></li>
 		              </ul>
 		            </li>
 		          </ul>
@@ -61,13 +74,12 @@
 	
 		<div class="container">
 			<div class="row">
+				<?php 
+					if($mobiles != NULL){
+						foreach ($mobiles as $mobile){
+							echo "
 				
-						<?php 
-									if($mobiles != NULL){
-										foreach ($mobiles as $mobile){
-											echo "
-												
-												<div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
+									<div class='col-lg-3 col-md-3 col-sm-6 col-xs-12'>
 										<div class='my-list'>
 											<img src='$mobile->ImageUrl' alt='dsadas' />
 											<h3>".$DB->getBrandById($mobile->BrandID)->Name." "."$mobile->Model</h3>
@@ -84,13 +96,13 @@
 											</div>
 										</div>
 									</div>
-												";
-										}
-									}
-									
-								?>
+								";
+							}
+						}
+				?>
 				
 			</div>
     	</div>
+    	
 	</body>
 </html>
