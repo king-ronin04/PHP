@@ -1,6 +1,6 @@
 # Mobile Gallery
 
-
+## How to Run
 
 
  
@@ -19,9 +19,9 @@ The Mobile Gallery project is a web application that allows users to view and br
 
 The project is implemented using:
 
-	**Frontend:** HTML, CSS, Bootstrap
-	**Backend:** PHP
-	**Database:** MySQL
+	**Frontend:** HTML, CSS, Bootstrap<br>
+	**Backend:** PHP<br>
+	**Database:** MySQL<br>
 
 The application has a home page, about and contact pages accessible to all visitors. To access mobile data, users need to register and login.
 
@@ -33,10 +33,10 @@ The admin section allows adding and editing mobiles after logging in as an admin
 
 The MySQL database has the following tables:
 
-	Users - To store registered user information
-	Admins - For admin user data
-	Mobiles - Contains mobile phone data like price, specs etc.
-	Brands - Contains phone brands and logo image
+	**Users** - To store registered user information<br>
+	**Admins** - For admin user data<br>
+	**Mobiles** - Contains mobile phone data like price, specs etc.<br>
+	**Brands** - Contains phone brands and logo image
 
 Foreign keys are used to link mobiles to brands.
 
@@ -44,17 +44,17 @@ Foreign keys are used to link mobiles to brands.
 
 The Mobile Gallery project leverages a range of technologies to ensure a robust and user-friendly platform. Below is an overview of the key technologies used in this project:
 
-•	PHP (Hypertext Preprocessor): PHP serves as the core programming language for the Mobile Gallery project. It allows us to create dynamic web pages and interact with databases, making it a suitable choice for building web applications that rely on server-side scripting.
+•	**PHP (Hypertext Preprocessor):** PHP serves as the core programming language for the Mobile Gallery project. It allows us to create dynamic web pages and interact with databases, making it a suitable choice for building web applications that rely on server-side scripting.
 
-•	MySQL Database: To manage the extensive catalog of mobile devices, we use the MySQL database management system. It helps us store, retrieve, and manage data efficiently, ensuring fast and reliable access to device information.
+•	**MySQL Database:** To manage the extensive catalog of mobile devices, we use the MySQL database management system. It helps us store, retrieve, and manage data efficiently, ensuring fast and reliable access to device information.
 
-•	HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets): HTML and CSS are fundamental web technologies used to structure and style the content of the Mobile Gallery. HTML defines the layout and content, while CSS controls the visual presentation, ensuring a clean and visually appealing user interface.
+•	**HTML (Hypertext Markup Language) and CSS (Cascading Style Sheets):** HTML and CSS are fundamental web technologies used to structure and style the content of the Mobile Gallery. HTML defines the layout and content, while CSS controls the visual presentation, ensuring a clean and visually appealing user interface.
 
-•	JavaScript: JavaScript is utilized for adding interactivity to the Mobile Gallery website. It enables features like user reviews, search functionality, and dynamic page elements, enhancing the user experience.
+•	**JavaScript:** JavaScript is utilized for adding interactivity to the Mobile Gallery website. It enables features like user reviews, search functionality, and dynamic page elements, enhancing the user experience.
 
-•	Bootstrap Framework: Bootstrap is a front-end framework that aids in designing responsive and mobile-friendly web pages. It ensures that the Mobile Gallery website looks and functions seamlessly across various devices and screen sizes.
+•	**Bootstrap Framework:** Bootstrap is a front-end framework that aids in designing responsive and mobile-friendly web pages. It ensures that the Mobile Gallery website looks and functions seamlessly across various devices and screen sizes.
 
-•	Version Control (e.g., Git): To manage codebase changes and collaborate effectively, version control systems like Git are employed.
+•	**Version Control (e.g., Git):** To manage codebase changes and collaborate effectively, version control systems like Git are employed.
 
 The combination of these technologies provides the foundation for the Mobile Gallery project, allowing users to seamlessly explore and compare mobile devices while enjoying a responsive and user-friendly web experience.
 
