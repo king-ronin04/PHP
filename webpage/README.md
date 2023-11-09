@@ -1,9 +1,7 @@
 # Mobile Gallery
 
 ## How to Run
-
-
- 
+- Clone the repository with `git clone ` 
 
 # INTRODUCTION
 
