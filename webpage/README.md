@@ -5,23 +5,23 @@
 
  
 
-INTRODUCTION
+# INTRODUCTION
 
 The Mobile Gallery project aims to provide an easy-to-navigate and comprehensive mobile device repository, where users can access detailed information about various mobile devices, including specifications, images, and user reviews. This project comes in response to the need for a reliable resource to compare and select the ideal mobile device that suits individual preferences and requirements.
 
 The Mobile Gallery project is a web application that allows users to view and browse information about various mobile phones. The key features of the project include:
 
-	User authentication - Users can register and login to access the application.
+- User authentication - Users can register and login to access the application.
 
-	Browse mobiles - Logged in users can view and browse mobile phones, see details like price, specs etc.
+- Browse mobiles - Logged in users can view and browse mobile phones, see details like price, specs etc.
 
-	Admin features - Admin users can add, edit and manage mobile phone data in the system.
+- Admin features - Admin users can add, edit and manage mobile phone data in the system.
 
 The project is implemented using:
 
-	Frontend: HTML, CSS, Bootstrap
-	Backend: PHP
-	Database: MySQL
+	**Frontend:** HTML, CSS, Bootstrap
+	**Backend:** PHP
+	**Database:** MySQL
 
 The application has a home page, about and contact pages accessible to all visitors. To access mobile data, users need to register and login.
 
@@ -29,7 +29,7 @@ Once logged in, users can browse and view all mobiles, sorted by price in ascend
 
 The admin section allows adding and editing mobiles after logging in as an admin user. Admins can also add new brands that are then available when adding a new mobile.
 
-Database Design
+### Database Design
 
 The MySQL database has the following tables:
 
@@ -40,7 +40,7 @@ The MySQL database has the following tables:
 
 Foreign keys are used to link mobiles to brands.
 
-Technologies Used:
+### Technologies Used:
 
 The Mobile Gallery project leverages a range of technologies to ensure a robust and user-friendly platform. Below is an overview of the key technologies used in this project:
 
@@ -64,38 +64,38 @@ The combination of these technologies provides the foundation for the Mobile Gal
 
 
  
-Project Screenshots
+## Project Screenshots
 
-Home Page
+### Home Page
 ![image](https://github.com/king-ronin04/php/assets/103017387/92b62ad0-a682-408e-a2e6-33f434083db1)
 
 
 
-Mobile Details
+### Mobile Details
 ![image](https://github.com/king-ronin04/php/assets/103017387/eb14658d-9df3-47c5-adcd-0c3492a8e9a2)
 
 
-Add Brand and Add Mobiles
+### Add Brand and Add Mobiles
 ![image](https://github.com/king-ronin04/php/assets/103017387/ddc9e2b4-37cf-49cd-a11c-a41e54b0dc2e)
 
 
 
 
-Edit Mobile Details
+### Edit Mobile Details
 ![image](https://github.com/king-ronin04/php/assets/103017387/c8486684-dbb3-49b8-a71e-6e9297cb7019)
 
  
-About Us
+### About Us
 ![image](https://github.com/king-ronin04/php/assets/103017387/2f926e53-7653-49e5-8272-205304ec2a34)
 
-Contact Us
+### Contact Us
  ![image](https://github.com/king-ronin04/php/assets/103017387/bf7399b4-cfd3-4165-b88d-c9bea6b3e45c)
 
-Login Page
+### Login Page
 ![image](https://github.com/king-ronin04/php/assets/103017387/38f49535-9a97-4093-b734-58ac2a393e36)
 
 
 
-Register Page
+### Register Page
  ![image](https://github.com/king-ronin04/php/assets/103017387/79becd56-d0d8-40e0-a167-ababdf6e71ad)
 
